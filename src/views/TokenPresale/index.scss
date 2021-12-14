@@ -1,0 +1,491 @@
+.light-bg {
+    background: #000000;
+    opacity: 0.6;
+    border: 1px solid rgba(254, 211, 211, 0.6);
+    box-shadow: 0px 0px 16px rgba(255, 237, 237, 0.7);
+    border-radius: 10px;
+    padding: 42px;
+}
+
+.finch-container {
+    height: $max-height;
+    background-image: url("../../assets/img/home-1.png");
+    background-size: cover;
+    box-sizing: border-box;
+
+    .dialog {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        left: 0;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: 100;
+
+        .content {
+            width: 452px;
+            height: 320px;
+            z-index: 101;
+            background-image: url("../../assets/img/zero.png");
+            background-size: 105%;
+            background-position: center center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 42px 36px;
+            box-sizing: border-box;
+
+            .title {
+                font-family: Lobster;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 32px;
+                line-height: 40px;
+                text-align: center;
+                letter-spacing: 0.05em;
+                color: #FFFFFF;
+            }
+
+            .desc {
+                font-family: Moderne;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 28px;
+                text-align: center;
+                color: #FFFFFF;
+                margin-top: 32px;
+                margin-bottom: 48px;
+            }
+
+            .confirm {
+                background: #F25353;
+                border-radius: 6px;
+                width: 100%;
+                height: 56px;
+                font-family: Moderne;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 28px;
+                text-align: center;
+                color: #FFFFFF;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+            }
+            .confirm:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+
+    .container-center {
+        color: #fff;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .token-left {
+            width: 706px;
+            height: 728px;
+            @extend .light-bg;
+            box-sizing: border-box;
+
+            .title {
+                font-family: Lobster;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 32px;
+                line-height: 40px;
+                text-align: center;
+                letter-spacing: 0.05em;
+                color: #ffffff;
+                margin-bottom: 56px;
+            }
+
+            .form {
+                .form-top {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+
+                    .form-top-a,
+                    .form-top-b {
+                        width: 50%;
+                        display: flex;
+                        flex-direction: column;
+                        flex-wrap: wrap;
+                        justify-content: flex-start;
+                        align-items: center;
+
+                        .item {
+                            width: 100%;
+                            display: flex;
+
+                            .label {
+                                display: inline-block;
+                                font-family: Moderne;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 16px;
+                                line-height: 36px;
+                                letter-spacing: 0.05em;
+                                color: #ffe8e8;
+                            }
+
+                            .value {
+                                font-family: DIN;
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 16px;
+                                line-height: 36px;
+                                color: #ffffff;
+                                margin-left: 10px;
+                                display: inline-flex;
+                                flex: 1;
+                            }
+                        }
+                    }
+                }
+
+                .form-bottom {
+                    .item {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .label {
+                            display: inline-block;
+                            font-family: Moderne;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 16px;
+                            line-height: 36px;
+                            letter-spacing: 0.05em;
+                            color: #ffe8e8;
+                        }
+
+                        .value {
+                            font-family: DIN;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 18px;
+                            line-height: 36px;
+                            text-align: right;
+                            color: #ffffff;
+                        }
+                    }
+
+                    .item:last-child {
+                        .label {
+                            font-family: Moderne;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 16px;
+                            line-height: 36px;
+                            letter-spacing: 0.05em;
+                            text-decoration-line: underline;
+                            color: #f42f24;
+                        }
+
+                        .value {
+                            font-family: DIN;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 18px;
+                            line-height: 36px;
+                            text-align: right;
+                            color: #ffffff;
+                        }
+                    }
+                }
+            }
+
+            .swap {
+                margin-top: 42px;
+
+                .title {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 4px;
+
+                    .label {
+                        font-family: Moderne;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 36px;
+                        letter-spacing: 0.05em;
+                        color: #ffe8e8;
+                    }
+
+                    .rate {
+                        font-family: DIN;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 18px;
+                        line-height: 36px;
+                        text-align: right;
+                        color: #f42f24;
+                    }
+                }
+
+                .input-box {
+                    background: rgba(202, 140, 140, 0.2);
+                    border: 1px solid rgba(254, 211, 211, 0.6);
+                    box-sizing: border-box;
+                    border-radius: 6px;
+                    margin-bottom: 24px;
+                    padding: 4px 12px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    width: 622px;
+                    height: 80px;
+
+                    .input-box-top {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .name {
+                            font-family: DIN;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 18px;
+                            line-height: 36px;
+                            color: #ffffff;
+                        }
+
+                        .right {
+                            font-family: DIN;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 18px;
+                            line-height: 36px;
+                            color: #ffffff;
+
+                            .value {
+                                font-family: DIN;
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 18px;
+                                line-height: 36px;
+                                text-align: right;
+                                color: #f42f24;
+                            }
+                        }
+                    }
+
+                    .input-box-bottom {
+                        width: 100%;
+                        position: relative;
+
+                        input {
+                            width: 100%;
+                            height: 36px;
+                            font-family: DIN;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 20px;
+                            line-height: 36px;
+                            color: #ffffff;
+
+                            border: none;
+                            background: transparent;
+                            outline: none;
+                        }
+
+                        .max {
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            width: 82px;
+                            height: 28px;
+                            background: #2aa891;
+                            border-radius: 4px;
+                            font-family: Moderne;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 16px;
+                            line-height: 28px;
+                            text-align: center;
+                            color: #000000;
+                            cursor: pointer;
+                        }
+
+                        .max:hover {
+                            background: #1cd7b5;
+                            border-radius: 4px;
+                        }
+                    }
+                }
+
+                .action {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-top: 36px;
+
+                    &>div {
+                        width: 200px;
+                        height: 64px;
+                        background: rgba(202, 140, 140, 0.2);
+                        border: 1px solid rgba(254, 211, 211, 0.6);
+                        box-sizing: border-box;
+                        box-shadow: inset 0px 0px 8px #fd7b7b;
+                        border-radius: 6px;
+                        font-family: Lobster;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 28px;
+                        line-height: 36px;
+                        color: #ffffff;
+                        cursor: pointer;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    &>div:hover {
+                        background: rgba(202, 140, 140, 0.5);
+                        border: 1px solid #fed3d3;
+                    }
+                }
+            }
+        }
+
+        .token-right {
+            width: 452px;
+            height: 728px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-content: space-between;
+
+            .token-right-a,
+            .token-right-b {
+                width: 452px;
+                height: 344px;
+                @extend .light-bg;
+                box-sizing: border-box;
+            }
+
+            .token-right-a {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .title {
+                    font-family: Lobster;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 32px;
+                    line-height: 40px;
+                    text-align: center;
+                    letter-spacing: 0.05em;
+                    color: #FFFFFF;
+                }
+
+                .desc {
+                    font-family: Moderne;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 20px;
+                    line-height: 24px;
+                    text-align: center;
+                    letter-spacing: 0.05em;
+                    color: #F42F24;
+                }
+
+                .audio {
+                    width: 345px;
+                    margin-top: 24px;
+                    margin-bottom: 8px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    font-family: DIN;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 36px;
+                    color: #FFFFFF;
+
+                    .audio-center {
+                        font-family: DIN;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 32px;
+                        line-height: 36px;
+                        text-align: right;
+                        color: #2AA891;
+                    }
+                }
+
+                .audio-img {
+                    width: 345px;
+                    margin-bottom: 24px;
+                }
+
+                .congratulation {
+                    font-family: Lobster;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 36px;
+                    line-height: 42px;
+                    text-align: center;
+                    letter-spacing: 0.15em;
+                    color: #F3C763;
+                }
+            }
+
+            .token-right-b {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+
+                .title {
+                    font-family: Lobster;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 32px;
+                    line-height: 40px;
+                    text-align: center;
+                    letter-spacing: 0.05em;
+                    color: #FFFFFF;
+                }
+
+                .desc {
+                    font-family: Moderne;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 32px;
+                    line-height: 56px;
+                    text-align: center;
+                    color: #FFFFFF;
+                    opacity: 0.45;
+                    margin-top: 56px;
+                }
+            }
+        }
+    }
+}

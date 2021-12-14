@@ -1,0 +1,16 @@
+@font-face {
+    font-family: Lobster;
+    src: url("../assets/fonts/Lobster_1.3.otf");
+}
+
+@font-face {
+    font-family: Moderne;
+    src: url("../assets/fonts/Moderne.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Moderne;
+    src: url("../assets/fonts/Moderne_Demi.ttf");
+    font-weight: 600;
+}

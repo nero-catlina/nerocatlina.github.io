@@ -1,0 +1,21 @@
+$max-height: calc(100vh - 66px);
+
+.flex-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.flex-column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container-center {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
