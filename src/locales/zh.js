@@ -12,7 +12,6 @@ export default {
     title: "Cooperative Partner",
     joinus: "Join us",
     contact: "Contact us: ",
-    email: `joinus\@hotmail.com`,
     copyright: "Copyright © 2021.All Rights Reserved By Finch`s Word"
   },
   home: {
@@ -62,6 +61,26 @@ export default {
       claimBalance: "Claim Balance",
       claim: "CLAIM",
       buy: "BUY GODZ"
+    },
+    stats: {
+      title: "CryptoGodz Presale Stats",
+      desc: "Presale Goal",
+      congratulation: "Congratulations. Presale  Has  Ended!"
+    },
+    events: {
+      title: "CryptoGodz Presale Events",
+      desc: "FETCHING PRESALE TRANSACTIONS.."
+    },
+    dialog: {
+      title: "ZERO BALANCE",
+      desc: "You have zero token balance on this account address.",
+      confirm: "OK"
     }
+  },
+  nftPresale: {
+    title: "NFT  Presale",
+    buy: "BUY LIMITED NFT PRESALE",
+    tab1: "Limited  NFT  Presale",
+    tab2: "Limited  NFT  Presale"
   }
 };

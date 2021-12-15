@@ -1,11 +1,3 @@
-<script setup>
-import Module1 from "./module1";
-import Module2 from "./module2";
-import Module3 from "./module3";
-import Module4 from "./module4";
-import Footer from "../../components/Footer";
-</script>
-
 <template>
   <div>
     <Module1 />
@@ -18,6 +10,24 @@ import Footer from "../../components/Footer";
     <Footer />
   </div>
 </template>
+
+<script>
+import Module1 from "./module1";
+import Module2 from "./module2";
+import Module3 from "./module3";
+import Module4 from "./module4";
+import Footer from "@/components/Footer/index.vue";
+
+export default {
+  components: {
+    Module1,
+    Module2,
+    Module3,
+    Module4,
+    Footer,
+  },
+};
+</script>
 
 <style lang="scss" scoped>
 .gradient {

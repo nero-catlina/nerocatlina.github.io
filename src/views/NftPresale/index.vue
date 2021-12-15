@@ -34,7 +34,9 @@ const handleToggle = (index) => {
             </div>
           </div>
           <div class="content">
-            <div class="model"></div>
+            <div class="model">
+              <img src="@/assets/img/model.png" alt="">
+            </div>
             <div class="price">0.05 BNB</div>
           </div>
           <div class="buy">{{ $t("nftPresale.buy") }}</div>
@@ -149,9 +151,16 @@ const handleToggle = (index) => {
         }
         .content {
           .model {
-            width: 271px;
+            // width: 271px;
+            width: 400px;
             height: 279px;
             margin: 32px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+              width: 100%;
+            }
           }
           .price {
             font-family: DIN;

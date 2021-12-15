@@ -1,37 +1,3 @@
-<script setup>
-import { watch, reactive } from "vue";
-import { useRoute } from "vue-router";
-
-const route = useRoute();
-
-const routes = [
-  {
-    name: "Home",
-    path: "/",
-    id: 0,
-  },
-  {
-    name: "Token Presale",
-    path: "/token-presale",
-    id: 1,
-  },
-  {
-    name: "NFT Presale",
-    path: "/nft-presale",
-    id: 2,
-  },
-];
-
-const state = reactive({
-  currentPath: "/",
-  currentNative: 0,
-});
-
-watch(() => {
-  state.currentPath = route.path;
-});
-</script>
-
 <template>
   <div class="footer">
     <div class="filter"></div>
@@ -88,7 +54,7 @@ watch(() => {
           </div>
           <div class="contact">
             <span class="label">{{ $t("footer.contact") }}</span>
-            <span class="text">{{ $t("footer.email") }}</span>
+            <span class="text">joinus@hotmail.com</span>
           </div>
         </div>
       </div>

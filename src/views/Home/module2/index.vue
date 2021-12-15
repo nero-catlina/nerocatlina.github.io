@@ -19,11 +19,11 @@
       <div class="product">
         <div class="a-left">
           <div class="a-top">
-            <!-- <iframe
+            <iframe
             class="model"
               data-v-355fd379=""
               title="Fire Sentz"
-              src="https://sketchfab.com/models/ada518f9ccaa4d879293a9e88e23e2f4/embed?autospin=1&amp;autostart=1&amp;camera=0&amp;transparent=1&amp;ui_animations=0&amp;ui_infos=0&amp;ui_stop=0&amp;ui_inspector=0&amp;ui_watermark_link=0&amp;ui_watermark=0&amp;ui_hint=0&amp;ui_ar=0&amp;ui_help=0&amp;ui_settings=0&amp;ui_vr=0&amp;ui_fullscreen=0&amp;ui_annotations=0&amp;ui_theme=dark"
+              src="https://sketchfab.com/models/f56ea863b4f74c1dbad50060cd16c566/embed?autospin=1&amp;autostart=1&amp;camera=0&amp;transparent=1&amp;ui_animations=0&amp;ui_infos=0&amp;ui_stop=0&amp;ui_inspector=0&amp;ui_watermark_link=0&amp;ui_watermark=0&amp;ui_hint=0&amp;ui_ar=0&amp;ui_help=0&amp;ui_settings=0&amp;ui_vr=0&amp;ui_fullscreen=0&amp;ui_annotations=0&amp;ui_theme=dark"
               width="100%"
               height="100%"
               frameborder="0"
@@ -35,7 +35,8 @@
               execution-while-not-rendered=""
               web-share=""
               allow="autoplay; fullscreen; xr-spatial-tracking"
-            ></iframe> -->
+            ></iframe>
+            <!-- <img class="model-item" src="../../../assets/space_vehicle.gif" alt=""> -->
           </div>
           <div class="a-bottom">
             <!-- <iframe
@@ -55,6 +56,7 @@
               web-share=""
               allow="autoplay; fullscreen; xr-spatial-tracking"
             ></iframe> -->
+            <img class="model-item" src="../../../assets/img/model.png" alt="">
           </div>
         </div>
         <div class="a-center">
@@ -76,6 +78,7 @@
               web-share=""
               allow="autoplay; fullscreen; xr-spatial-tracking"
             ></iframe> -->
+            <img class="model-item" src="../../../assets/img/model.png" alt="">
           </div>
           <div class="a-center-bottom">
             <a href="" class="link">{{ $t("home.module2.introduction") }}</a>
@@ -100,6 +103,7 @@
               web-share=""
               allow="autoplay; fullscreen; xr-spatial-tracking"
             ></iframe> -->
+            <img class="model-item" src="../../../assets/img/model.png" alt="">
           </div>
           <div class="a-bottom">
             <!-- <iframe
@@ -117,6 +121,7 @@
               web-share=""
               allow="autoplay; fullscreen; xr-spatial-tracking"
             ></iframe> -->
+            <img class="model-item" src="../../../assets/img/model.png" alt="">
           </div>
         </div>
       </div>
@@ -197,6 +202,9 @@ $module-height: 980px;
         & > div {
           width: 300px;
           height: 232px;
+          .model-item {
+            width: 100%;
+          }
         }
         .a-top {
           margin-bottom: 48px;
@@ -208,6 +216,9 @@ $module-height: 980px;
           width: 470px;
           height: 408px;
           margin-bottom: 36px;
+          .model-item {
+            width: 100%;
+          }
         }
         .a-center-bottom {
           width: 470px;

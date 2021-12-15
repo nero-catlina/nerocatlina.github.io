@@ -135,7 +135,18 @@ const setCurrentItem = (index) => {
 
 <template>
   <div class="finch-container">
-    <div class="filter"></div>
+    <div class="filter">
+      <video
+        autoplay="autoplay"
+        playsinline=""
+        loop="loop"
+        preload="auto"
+        style="object-fit: cover"
+        class="video"
+      >
+        <source src="../../../assets/fire-bg.mp4" type="video/mp4" />
+      </video>
+    </div>
     <div class="gradient">
       <h1 class="title" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500">
         {{ $t("home.module4.title") }}
@@ -179,24 +190,32 @@ $module-height: 980px;
   height: $module-height;
   background-image: url("../../../assets/img/home-4-bg.png");
   background-size: cover;
+  background-position: center center;
   position: relative;
   overflow: hidden;
   .filter {
     width: 100%;
     height: $module-height;
-    background-image: url("../../../assets/img/home-4-gradient.png");
-    background-size: cover;
-    z-index: 2;
     position: absolute;
-    left: 0;
-    top: 0;
+    background-image: url("../../../assets/img/home-4-filter.png");
+    opacity: 0.3;
+    .video {
+      visibility: visible;
+      pointer-events: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 100%;
+      width: 100%;
+    }
   }
   .gradient {
     width: 100%;
     height: $module-height;
     background-image: url("../../../assets/img/home-4-filter.png");
     background-size: cover;
-    z-index: 2;
+    z-index: 3;
     position: absolute;
     left: 0;
     top: 0;

@@ -12,7 +12,6 @@ export default {
     title: "Cooperative Partner",
     joinus: "Join us",
     contact: "Contact us: ",
-    email: `joinus\@hotmail.com`,
     copyright: "Copyright © 2021.All Rights Reserved By Finch`s Word"
   },
   home: {
