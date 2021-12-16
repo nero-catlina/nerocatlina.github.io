@@ -6,7 +6,7 @@ const router = createRouter({
   history: createWebHistory(),
   routes: [
     {
-      path: "/nerocatlina.github.io/",
+      path: "/",
       component: () => import("../layout/web.vue"),
       children: [
         {
@@ -14,11 +14,11 @@ const router = createRouter({
           component: () => import("../views/Home")
         },
         {
-          path: "/nerocatlina.github.io/token-presale",
+          path: "/token-presale",
           component: TokenPresale
         },
         {
-          path: "/nerocatlina.github.io/nft-presale",
+          path: "/nft-presale",
           component: () => import("../views/NftPresale")
         }
       ]

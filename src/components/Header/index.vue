@@ -7,23 +7,23 @@ const route = useRoute();
 const routes = [
   {
     name: "Home",
-    path: "/nerocatlina.github.io/",
+    path: "/",
     id: 0,
   },
   {
     name: "Token Presale",
-    path: "/nerocatlina.github.io/token-presale",
+    path: "/token-presale",
     id: 1,
   },
   {
     name: "NFT Presale",
-    path: "/nerocatlina.github.io/nft-presale",
+    path: "/nft-presale",
     id: 2,
   },
 ];
 
 const state = reactive({
-  currentPath: "/nerocatlina.github.io/",
+  currentPath: "/",
 });
 
 watch(() => {
